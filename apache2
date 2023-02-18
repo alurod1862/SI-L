@@ -1,0 +1,11 @@
+/var/log/apache2/*log{
+    maxsize 16K
+    rotate 7
+    missingok
+    nocompress
+    create
+    sharedscripts
+    postrotate
+    systemctl restart apache2.service
+    endscript
+}
