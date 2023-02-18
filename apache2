@@ -1,5 +1,5 @@
 /var/log/apache2/*log{
-    maxsize 16K
+    maxsize 512K
     rotate 7
     missingok
     nocompress
